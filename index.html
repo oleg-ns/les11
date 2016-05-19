@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Form</title>
+		<meta charset="utf8">
+		 <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Please fill the information bellow:</h1>
+		</header>
+		<hr/>
+			<form method="post" action="form.php">
+				<div>
+					<label for="first_name">First name <span class="required">*</span></label></br>
+					<input id="first_name" type="text" required placeholder="First name" tabinbex="1" autofocus>
+					<span>Enter your first name</span>
+				</div>
+				<div>
+					<label for="last_name">Last name <span class="required">*</span></label></br>
+					<input id="last_name" type="text" required placeholder="Last name" tabinbex="2">
+					<span>Enter your last name</span>
+				</div>
+				<div class="block">
+					<table>
+					<tr><td><label for="date">Date of birth <span class="required">*</span></label></td><td><label for="gender">Choose gender <span class="required">*</span></label></td></tr>
+					<tr><td><input id="date" type="date" required tabinbex="3"><span>Enter your date of birth</span></td><td><input id="gender" type="radio" name="gender" required tabinbex="4">male
+					<input id="gender" type="radio" name="gender" required>female</td></tr>
+					</table>
+				</div>
+				<div>
+					<label for="password">Password <span class="required">*</span></label></br>
+					<input id="password" type="password" required placeholder="password" pattern="{6,}[A-Za-z][0-9]" tabinbex="5">
+					<span>Enter your password (at least 6 symbols)</span>
+				</div>
+				<div>
+					<label for="password2">Repeat password <span class="required">*</span></label></br>
+					<input id="password2" type="password" required placeholder="repeat password" tabinbex="6">
+					<span>Repeat your password</span>
+				</div>
+				<div>
+					<label for="phone">Enter your phone number <span class="required">*</span></label></br>
+					<input id="phone" type="tel" required placeholder="38-0**-***-***-**" tabinbex="7">
+					<span>Enter your phone number</span>
+				</div>
+				<div>
+					<label for="web">Enter your web site URL</label></br>
+					<input id="web" type="url" placeholder="http:\\******" tabinbex="8">
+					<span>Enter your URL</span>
+				</div>
+				<div class="card">
+				Please enter your card information</br>
+					<label for="card">Card number</label>
+					<label for="cv_card"class="cvv">CVV</label></br>
+					<input id="card" type="number" pattern=[1-9]{4} placeholder="----" tabinbex="9">
+					<span>Enter first 4 numbers of your card</span>
+					<input id="card" type="number" pattern=[1-9]{4} placeholder="----" tabinbex="10">
+					<span>Enter second 4 numbers of your card</span>
+					<input id="card" type="number" pattern=[1-9]{4} placeholder="----" tabinbex="11">
+					<span>Enter third 4 numbers of your card</span>
+					<input id="card" type="number" pattern=[1-9]{4} placeholder="----" tabinbex="12">
+					<span>Enter fourth 4 numbers of your card</span>
+					
+					<input id="cv_card" type="number" pattern=[1-9]{3} placeholder="---" tabinbex="13">
+					<span>Enter 3 numbers of your card CVV</span>
+				</div>
+				<div>
+					<label for="family">Choose how many brothers or sisters do you have</label></br>
+					<input id="family" type="range" min="0" max="5" step="1" value="0" tabinbex="14">
+				</div>
+				<div>
+					<label for="color">Choose your favourite color</label>
+					<input id="color" type="color" tabinbex="15">
+				</div>
+				<div>
+					<input class="button" type="submit" value="Submit" tabinbex="16">
+				</div>
+				
+				<section>
+					<svg><circle cx="100" cy="80" r="60" fill="white" stroke="black" stroke-width="10" />
+					<line x1="100" y1=20 x2=100 y2=30 stroke="black" stroke-width="5" />
+					<line x1="105" y1=140 x2=105 y2=130 stroke="black" stroke-width="5" />
+					<line x1="150" y1=80 x2=160 y2=80 stroke="black" stroke-width="5" />
+					<line x1="40" y1=80 x2=50 y2=80 stroke="black" stroke-width="5" />
+					<line x1="100" y1=80 x2=100 y2=30 stroke="red" stroke-width="2" />
+					
+					</svg>
+				</section>
+	</body>
+
+</html>

@@ -1,0 +1,51 @@
+body {
+	width:550px;
+}
+hr {
+	width:520px;
+	margin-left:10px;
+}
+ .required {
+	color:red;
+	text-transform:uppercase;
+}
+input[required] {
+	background-color:red;
+}
+input[required]:focus 	{
+	background-color:white;
+}
+input+span{
+	display:none;
+}
+input:focus+span{
+	display:block;
+	position:absolute;
+	background-color:white;
+	color:red;
+	margin-left:110px;
+}
+input[placeholder] {
+	color:black;
+	font-style:italic;
+}
+#first_name, #last_name, #password, #password2, #phone, #web {
+	width:520px;
+}
+table {
+	width:520px;
+}
+.card input {
+	width:40px;
+}
+.cvv {
+	margin-left:110px;
+}
+.button {
+	height:40px;
+	width:80px;
+	border-radius:12px;
+	background-color:green;
+	margin-left:450px;
+	color:white;
+}
